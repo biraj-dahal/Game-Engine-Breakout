@@ -65,7 +65,14 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.36f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/PaddleScript.cs" />
+    <Compile Include="Assets/Scripts/Ballscript.cs" />
+    <Compile Include="Assets/Scripts/BrickScript.cs" />
     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+    <Compile Include="Assets/Scripts/SoundManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets/Press_Start_2P/OFL.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
