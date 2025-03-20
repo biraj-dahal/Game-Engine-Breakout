@@ -8,6 +8,7 @@ TagManager:
   - Boundaries
   - Paddle
   - GameOver
+  - Ball
   layers:
   - Default
   - TransparentFX
