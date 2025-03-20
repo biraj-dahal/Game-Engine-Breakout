@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+
+    public static SoundManager S; // Singleton pattern
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private AudioSource audioSource;
 
@@ -10,6 +13,18 @@ public class SoundManager : MonoBehaviour
     public AudioClip paddleHitSound;
 
     public AudioClip gameOverSound;
+
+    private void Awake()
+    {
+        if (S == null)
+        {
+            S = this;
+        }
+        else
+        {
+            Debug.LogError("SoundManager.Awake() - Attempted to assign second SoundManager.S!");
+        }
+    }
 
     void Start()
     {
