@@ -15,6 +15,10 @@ public float offset = 7.6f;
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.S.curState != GameState.Playing)
+        {
+            return;
+        }
         Vector3 curPosition = transform.position;
         
         // is the key pressed?  
